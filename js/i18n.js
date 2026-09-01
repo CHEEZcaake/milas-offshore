@@ -33,7 +33,7 @@ const I18N = (function () {
         sub: "We handle inspection, documentation and logistics, so you get the right part on time.",
         f1_t: "Fast quotation", f1_d: "Send us your enquiry and receive a detailed quote, usually within 24 hours.",
         f2_t: "Global shipping", f2_d: "Door to door logistics from our Netherlands hub to ports and yards worldwide.",
-        f3_t: "Inspected equipment", f3_d: "Every part is checked and documented before it leaves our warehouse.",
+
         f4_t: "Wide inventory", f4_d: "New arrivals added constantly: engines, deck gear, navigation, safety and more."
       },
       products: {
@@ -123,7 +123,7 @@ const I18N = (function () {
         sub: "Wij regelen inspectie, documentatie en logistiek, zodat u het juiste onderdeel op tijd ontvangt.",
         f1_t: "Snelle offerte", f1_d: "Stuur uw aanvraag en ontvang meestal binnen 24 uur een gedetailleerde offerte.",
         f2_t: "Wereldwijde verzending", f2_d: "Deur tot deur logistiek vanuit onze hub in Nederland naar havens en werven wereldwijd.",
-        f3_t: "Geïnspecteerde uitrusting", f3_d: "Elk onderdeel wordt gecontroleerd en gedocumenteerd voordat het ons magazijn verlaat.",
+
         f4_t: "Breed assortiment", f4_d: "Voortdurend nieuwe aanwas: motoren, dekuitrusting, navigatie, veiligheid en meer."
       },
       products: {
@@ -214,7 +214,7 @@ const I18N = (function () {
         sub: "Nous prenons en charge l'inspection, la documentation et la logistique, pour que vous receviez la bonne pièce à temps.",
         f1_t: "Devis rapide", f1_d: "Envoyez-nous votre demande et recevez un devis détaillé, généralement sous 24 heures.",
         f2_t: "Expédition internationale", f2_d: "Logistique porte-à-porte depuis notre hub aux Pays-Bas vers les ports et chantiers du monde entier.",
-        f3_t: "Équipement inspecté", f3_d: "Chaque pièce est contrôlée et documentée avant de quitter notre entrepôt.",
+
         f4_t: "Large stock", f4_d: "De nouvelles arrivées en continu : moteurs, équipements de pont, navigation, sécurité et plus encore."
       },
       products: {
@@ -305,7 +305,7 @@ const I18N = (function () {
         sub: "Wir übernehmen Inspektion, Dokumentation und Logistik, damit Sie das richtige Teil pünktlich erhalten.",
         f1_t: "Schnelles Angebot", f1_d: "Senden Sie uns Ihre Anfrage und erhalten Sie in der Regel innerhalb von 24 Stunden ein detailliertes Angebot.",
         f2_t: "Weltweiter Versand", f2_d: "Tür-zu-Tür-Logistik von unserem Standort in den Niederlanden zu Häfen und Werften weltweit.",
-        f3_t: "Geprüfte Ausrüstung", f3_d: "Jedes Teil wird geprüft und dokumentiert, bevor es unser Lager verlässt.",
+
         f4_t: "Großes Lager", f4_d: "Ständig neue Zugänge: Motoren, Deckausrüstung, Navigation, Sicherheit und mehr."
       },
       products: {
