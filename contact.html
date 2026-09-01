@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="contact_page.title">Contact | Milas Offshore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/logo-mark.png" alt="Milas Offshore"></span>
+      <span class="brand-text" data-i18n="brand.name">Milas Offshore<small data-i18n="brand.sub">Marine &amp; Offshore Supply</small></span>
+    </a>
+    <nav class="main-nav" data-main-nav>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="products.html" data-i18n="nav.products">Products</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="nav-cta-mobile" data-i18n="nav.quote">Request a Quote</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.quote">Request a Quote</a>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-current" data-lang-trigger type="button">
+          <span data-lang-label>EN</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button data-lang-btn="en" type="button">English</button>
+          <button data-lang-btn="nl" type="button">Nederlands</button>
+          <button data-lang-btn="fr" type="button">Français</button>
+          <button data-lang-btn="de" type="button">Deutsch</button>
+        </div>
+      </div>
+      <button class="nav-toggle" data-nav-toggle type="button" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a> / <span data-i18n="nav.contact">Contact</span></div>
+    <h1 data-i18n="contact_page.title">Contact &amp; Request a Quote</h1>
+    <p data-i18n="contact_page.lead">Tell us what you need: a part number, a description, or a photo, and we'll come back with a quote fast.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split" style="grid-template-columns:1.4fr 1fr;align-items:flex-start;">
+    <div class="form-card reveal">
+      <h3 data-i18n="contact_page.form_t">Send an enquiry</h3>
+      <form id="rfq-form">
+        <div class="form-row">
+          <div class="field">
+            <label data-i18n="contact_page.name">Full name</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="field">
+            <label data-i18n="contact_page.company">Company</label>
+            <input type="text" name="company">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label data-i18n="contact_page.email">Email address</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label data-i18n="contact_page.phone">Phone (optional)</label>
+            <input type="tel" name="phone">
+          </div>
+        </div>
+        <div class="field">
+          <label data-i18n="contact_page.subject">What are you looking for?</label>
+          <input type="text" name="subject" id="rfq-subject" data-i18n-ph="contact_page.subject_ph" placeholder="e.g. Marine diesel generator, 200kW">
+        </div>
+        <div class="field">
+          <label data-i18n="contact_page.message">Message / specifications</label>
+          <textarea name="message" data-i18n-ph="contact_page.message_ph" placeholder="Part number, make/model, quantity, condition preference, delivery port…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact_page.submit">Send enquiry</button>
+        <div class="form-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></svg>
+          <span data-i18n="contact_page.note">This is a demo form. Connect it to your email or CRM before going live, see the setup notes for how.</span>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-info-card reveal">
+      <h3 data-i18n="contact_page.info_t">Get in touch</h3>
+      <ul>
+        <li>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 1118.5 10c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg></span>
+          <span><b data-i18n="contact_page.addr_l">Location</b><span data-i18n="contact_page.addr_v">Rotterdam area, The Netherlands</span></span>
+        </li>
+        <li>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 2.9a2 2 0 01-.4 2.1L8 10a16 16 0 006 6l1.3-1.4a2 2 0 012.1-.4c.9.4 1.9.6 2.9.7a2 2 0 011.7 2z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><b data-i18n="contact_page.phone_l">Phone</b><span data-i18n="contact_page.phone_v">+31 686183850</span></span>
+        </li>
+        <li>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><b data-i18n="contact_page.email_l">Email</b><span data-i18n="contact_page.email_v">info@milasoffshore.nl</span></span>
+        </li>
+        <li>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><b data-i18n="contact_page.hours_l">Response time</b><span data-i18n="contact_page.hours_v">Within 24 hours, Mon–Fri</span></span>
+        </li>
+      </ul>
+      <a class="btn btn-whatsapp btn-block" href="https://wa.me/31686183850" target="_blank" rel="noopener" style="margin-top:18px;">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.1.8.8-3-.2-.3C3.6 14.7 3.2 13.4 3.2 12c0-4.8 3.9-8.7 8.8-8.7s8.8 3.9 8.8 8.7-3.9 8.7-8.8 8.7z"/></svg>
+        <span data-i18n="contact_page.whatsapp_cta" style="color:#111;">Chat on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:14px;">
+          <span class="brand-mark"><img src="images/logo-mark.png" alt="Milas Offshore"></span>
+          <span class="brand-text" data-i18n="brand.name">Milas Offshore</span>
+        </div>
+        <p data-i18n="footer.tagline">Marine &amp; offshore equipment and spare parts, supplied through our European office in the Netherlands.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.links_t">Quick links</h4>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="footer.l_home">Home</a>
+          <a href="products.html" data-i18n="footer.l_products">Products</a>
+          <a href="about.html" data-i18n="footer.l_about">About</a>
+          <a href="contact.html" data-i18n="footer.l_contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.company_t">Company</h4>
+        <div class="footer-links">
+          <a href="#" data-i18n="footer.c_terms">Terms &amp; Conditions</a>
+          <a href="#" data-i18n="footer.c_privacy">Privacy Policy</a>
+          <a href="contact.html" data-i18n="footer.c_rfq">Request for Quote</a>
+          <a href="admin.html" data-i18n="footer.l_admin">Admin login</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact_t">Contact</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 1118.5 10c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span data-i18n="footer.addr">Rotterdam area, The Netherlands</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 2.9a2 2 0 01-.4 2.1L8 10a16 16 0 006 6l1.3-1.4a2 2 0 012.1-.4c.9.4 1.9.6 2.9.7a2 2 0 011.7 2z" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="footer.phone">+31 686183850</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="footer.email">info@milasoffshore.nl</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> <span data-i18n="brand.name">Milas Offshore</span>. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <div class="footer-lang">
+        <button data-lang-btn="en" type="button">EN</button>
+        <button data-lang-btn="nl" type="button">NL</button>
+        <button data-lang-btn="fr" type="button">FR</button>
+        <button data-lang-btn="de" type="button">DE</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Prefill subject from ?item= query param (link from product detail page)
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(location.search);
+    const item = params.get("item");
+    if (item) document.getElementById("rfq-subject").value = decodeURIComponent(item);
+
+    const form = document.getElementById("rfq-form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      // Demo mode: no backend connected yet. See admin notes / setup guide
+      // for how to wire this to email (e.g. Formspree) or a real backend.
+      showToast(I18N.t("contact_page.success"));
+      form.reset();
+    });
+  });
+</script>
+</body>
+</html>

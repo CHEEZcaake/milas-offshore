@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin | Milas Offshore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-shell">
+
+<!-- ============ LOGIN VIEW ============ -->
+<div class="admin-login" id="admin-login-view">
+  <div class="admin-login-card">
+    <div class="brand" style="margin-bottom:22px;">
+      <span class="brand-mark"><img src="images/logo-mark.png" alt="Milas Offshore"></span>
+      <span class="brand-text" style="color:var(--navy-950);" data-i18n="brand.name">Milas Offshore</span>
+    </div>
+    <h2 data-i18n="admin.login_title" style="font-size:22px;">Admin sign in</h2>
+    <p class="small-muted" data-i18n="admin.login_sub" style="margin-bottom:22px;">Manage your product catalogue.</p>
+    <form id="admin-login-form">
+      <div class="field">
+        <label data-i18n="admin.pass_label">Access code</label>
+        <input type="password" id="admin-pass" data-i18n-ph="admin.pass_ph" placeholder="Enter access code" required>
+      </div>
+      <button type="submit" class="btn btn-dark btn-block" data-i18n="admin.login_btn">Sign in</button>
+      <p class="small-muted" id="admin-login-error" style="color:#c0392b;display:none;margin-top:12px;" data-i18n="admin.login_error">Incorrect code, try again.</p>
+      <p class="small-muted" style="margin-top:16px;"><span data-i18n="admin.login_hint">Demo access code: milasoffshore2026</span></p>
+    </form>
+    <div style="margin-top:18px;">
+      <div class="footer-lang">
+        <button data-lang-btn="en" type="button">EN</button>
+        <button data-lang-btn="nl" type="button">NL</button>
+        <button data-lang-btn="fr" type="button">FR</button>
+        <button data-lang-btn="de" type="button">DE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ADMIN APP ============ -->
+<div id="admin-app-view" style="display:none;">
+  <div class="admin-topbar">
+    <div class="container">
+      <div class="brand" style="color:#fff;">
+        <span class="brand-mark"><img src="images/logo-mark.png" alt="Milas Offshore"></span>
+        <span class="brand-text" data-i18n="brand.name">Milas Offshore</span>
+      </div>
+      <div class="flex gap-8" style="align-items:center;">
+        <div class="footer-lang">
+          <button data-lang-btn="en" type="button">EN</button>
+          <button data-lang-btn="nl" type="button">NL</button>
+          <button data-lang-btn="fr" type="button">FR</button>
+          <button data-lang-btn="de" type="button">DE</button>
+        </div>
+        <a href="index.html" class="btn btn-ghost btn-sm" data-i18n="footer.l_home">Home</a>
+        <button class="btn btn-primary btn-sm" id="admin-logout" data-i18n="admin.logout" type="button">Log out</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-layout">
+    <aside class="admin-side">
+      <a href="#" class="active"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg><span data-i18n="admin.dash">Dashboard</span></a>
+    </aside>
+    <main class="admin-main">
+      <div class="admin-stat-row">
+        <div class="admin-stat"><b id="stat-total">0</b><span data-i18n="admin.stat_total">Total listings</span></div>
+        <div class="admin-stat"><b id="stat-session">0</b><span data-i18n="admin.stat_month">Added this session</span></div>
+        <div class="admin-stat"><b id="stat-cat">6</b><span data-i18n="admin.stat_cat">Categories</span></div>
+        <div class="admin-stat"><b>4</b><span data-i18n="admin.stat_lang">Site languages</span></div>
+      </div>
+
+      <div class="admin-card">
+        <h3 data-i18n="admin.form_t">Add a new listing</h3>
+        <form id="admin-add-form">
+          <div class="field">
+            <label data-i18n="admin.f_name">Part name</label>
+            <input type="text" name="name" id="f-name" data-i18n-ph="admin.f_name_ph" placeholder="e.g. Marine diesel generator 200kW" required>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label data-i18n="admin.f_cat">Category</label>
+              <select name="category" id="f-cat">
+                <option value="engine" data-i18n="products.cat_engine">Engines & Generators</option>
+                <option value="deck" data-i18n="products.cat_deck">Deck Machinery</option>
+                <option value="nav" data-i18n="products.cat_nav">Navigation & Electronics</option>
+                <option value="safety" data-i18n="products.cat_safety">Safety & Life-Saving</option>
+                <option value="valve" data-i18n="products.cat_valve">Valves & Pumps</option>
+                <option value="electric" data-i18n="products.cat_electric">Electrical & Panels</option>
+              </select>
+            </div>
+            <div class="field">
+              <label data-i18n="admin.f_cond">Condition</label>
+              <select name="condition" id="f-cond">
+                <option value="used" data-i18n="products.cond_used">Used, inspected</option>
+                <option value="refurb" data-i18n="products.cond_refurb">Refurbished</option>
+                <option value="new" data-i18n="products.cond_new">New / Unused</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label data-i18n="admin.f_desc">Short description</label>
+            <textarea name="desc" id="f-desc" data-i18n-ph="admin.f_desc_ph" placeholder="Brief description shown on the catalogue card…" style="min-height:80px;"></textarea>
+          </div>
+          <div class="field">
+            <label data-i18n="admin.f_specs">Specifications</label>
+            <textarea name="specs" id="f-specs" data-i18n-ph="admin.f_specs_ph" placeholder="One per line, e.g.&#10;Power: 200kW&#10;Voltage: 400V&#10;Hours run: 3,200h"></textarea>
+          </div>
+          <div class="flex gap-8">
+            <button type="submit" class="btn btn-primary" data-i18n="admin.save">Save listing</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="admin-card">
+        <h3 data-i18n="admin.table_t">All listings</h3>
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th data-i18n="admin.th_name">Name</th>
+                <th data-i18n="admin.th_cat">Category</th>
+                <th data-i18n="admin.th_cond">Condition</th>
+                <th data-i18n="admin.th_status">Status</th>
+                <th data-i18n="admin.th_actions">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admin-table-body"></tbody>
+          </table>
+          <p class="small-muted" id="admin-empty" style="display:none;padding:20px 0;" data-i18n="admin.empty">No listings yet. Add your first one.</p>
+        </div>
+      </div>
+
+      <div class="admin-card" style="background:rgba(194,140,40,.06);border-color:rgba(194,140,40,.25);">
+        <h3 data-i18n="admin.note_t">About this admin panel</h3>
+        <p data-i18n="admin.note_p" style="margin:0;">This is a working demo: listings you add are saved in your browser (localStorage) so you can try the full flow. For a live site, this should be connected to a small backend or database so listings sync for every visitor and every device. Ask and we'll set that up next.</p>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="data/products.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

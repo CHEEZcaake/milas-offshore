@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="meta_title">Milas Offshore | Marine & Offshore Equipment Supplier</title>
+<meta name="description" content="Turkey-based supplier of marine and offshore equipment and spare parts, shipped worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <img src="images/logo-mark.png" alt="Milas Offshore">
+      </span>
+      <span class="brand-text" data-i18n="brand.name">Milas Offshore<small data-i18n="brand.sub">Marine &amp; Offshore Supply</small></span>
+    </a>
+
+    <nav class="main-nav" data-main-nav>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="products.html" data-i18n="nav.products">Products</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="nav-cta-mobile" data-i18n="nav.quote">Request a Quote</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.quote">Request a Quote</a>
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-current" data-lang-trigger type="button">
+          <span data-lang-label>EN</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button data-lang-btn="en" type="button">English</button>
+          <button data-lang-btn="nl" type="button">Nederlands</button>
+          <button data-lang-btn="fr" type="button">Français</button>
+          <button data-lang-btn="de" type="button">Deutsch</button>
+        </div>
+      </div>
+      <button class="nav-toggle" data-nav-toggle type="button" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero spotlight" data-tilt-scene>
+  <div class="bubble-field" data-bubble-field aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge"><span class="dot"></span> <span data-i18n="hero.badge">Based in Turkey, shipping worldwide</span></span>
+      <h1>
+        <span data-i18n="hero.title_a">Reliable marine &amp;</span>
+        <em data-i18n="hero.title_em">offshore</em>
+        <span data-i18n="hero.title_b">equipment, sourced fast.</span>
+      </h1>
+      <p class="lead" data-i18n="hero.lead">We supply inspected, ready to ship marine and offshore spare parts and equipment to shipowners, yards and operators, and we turn quotes around fast.</p>
+      <div class="hero-ctas">
+        <a href="products.html" class="btn btn-primary" data-i18n="hero.cta_browse">Browse inventory</a>
+        <a href="contact.html" class="btn btn-ghost" data-i18n="hero.cta_quote">Request a quote</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b data-count>60+</b><span data-i18n="hero.stat1_l">Countries served</span></div>
+        <div class="stat"><b>&lt;24h</b><span data-i18n="hero.stat2_l">Average quote time</span></div>
+      </div>
+      <div class="scroll-cue"><span class="line"></span><span data-i18n="hero.scroll">Scroll to explore</span></div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-panel" data-tilt-target>
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="hullGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2a4d68"/><stop offset="1" stop-color="#0f2740"/>
+            </linearGradient>
+          </defs>
+          <circle class="pulse-ring" cx="360" cy="70" r="46" fill="rgba(219,165,61,.15)"/>
+          <circle cx="360" cy="70" r="26" fill="rgba(219,165,61,.35)"/>
+          <!-- ambient waves (looping) -->
+          <g class="wave-loop wave-loop-a">
+            <path d="M0 300 Q40 285 80 300 T160 300 T240 300 T320 300 T400 300 T480 300 T560 300 T640 300 T720 300 T800 300 T880 300 T960 300 V360 H0 Z" fill="rgba(219,165,61,.12)"/>
+          </g>
+          <g class="wave-loop wave-loop-b">
+            <path d="M0 320 Q40 305 80 320 T160 320 T240 320 T320 320 T400 320 T480 320 T560 320 T640 320 T720 320 T800 320 T880 320 T960 320 V360 H0 Z" fill="rgba(255,255,255,.06)"/>
+          </g>
+          <!-- ship group: gently bobs on the waves -->
+          <g class="ship-bob">
+            <path d="M140 300V150" stroke="#8fb6c9" stroke-width="6" stroke-linecap="round"/>
+            <path d="M140 160 L235 240" stroke="#8fb6c9" stroke-width="6" stroke-linecap="round"/>
+            <path d="M235 240 L235 270" stroke="#dba53d" stroke-width="4" stroke-linecap="round"/>
+            <rect x="222" y="268" width="26" height="18" rx="3" fill="#dba53d"/>
+            <path d="M60 300 L420 300 L392 245 L88 245 Z" fill="url(#hullGrad)" stroke="#3c6a89" stroke-width="2"/>
+            <rect x="120" y="185" width="150" height="62" rx="6" fill="#123350" stroke="#3c6a89" stroke-width="2"/>
+            <rect class="cabin-light" x="140" y="200" width="18" height="16" rx="2" fill="#dba53d" opacity=".55"/>
+            <rect class="cabin-light" x="170" y="200" width="18" height="16" rx="2" fill="#dba53d" opacity=".85" style="animation-delay:.4s"/>
+            <rect class="cabin-light" x="200" y="200" width="18" height="16" rx="2" fill="#dba53d" opacity=".55" style="animation-delay:.8s"/>
+            <rect class="cabin-light" x="230" y="200" width="18" height="16" rx="2" fill="#dba53d" opacity=".85" style="animation-delay:1.2s"/>
+            <rect x="150" y="160" width="14" height="30" fill="#3c6a89"/>
+            <rect x="300" y="255" width="40" height="26" rx="2" fill="#c2431e" opacity=".85"/>
+            <rect x="340" y="255" width="40" height="26" rx="2" fill="#c28c28" opacity=".85"/>
+            <rect x="90" y="255" width="34" height="26" rx="2" fill="#f0d9a0" opacity=".5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-float f1">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><span data-i18n="hero.float1">Quote sent</span><small data-i18n="hero.float1_sub">Within hours</small></span>
+      </div>
+      <div class="hero-float f2">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z" stroke-linejoin="round"/></svg></span>
+        <span><span data-i18n="hero.float2">Quality checked</span><small data-i18n="hero.float2_sub">Every item inspected</small></span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-waves" aria-hidden="true">
+    <svg class="wave1" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 60 C150 100 350 0 600 50 S1050 100 1200 60 S1350 0 1200 60 L1200 120 L0 120 Z" fill="rgba(219,165,61,.10)"/></svg>
+    <svg class="wave2" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 70 C200 20 400 110 600 60 S1000 10 1200 70 S1400 110 1200 70 L1200 120 L0 120 Z" fill="rgba(255,255,255,.05)"/></svg>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track" data-marquee>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke-linejoin="round" stroke-linecap="round"/></svg><span data-i18n="marquee.m1">Fast quotation</span></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2" stroke-linecap="round"/></svg><span data-i18n="marquee.m4">Wide inventory</span></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 1118.5 10c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span data-i18n="marquee.m5">Trusted across Europe</span></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="marquee.m7">Multilingual team</span></span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke-linejoin="round" stroke-linecap="round"/></svg><span data-i18n="marquee.m1">Fast quotation</span></span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2" stroke-linecap="round"/></svg><span data-i18n="marquee.m4">Wide inventory</span></span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 1118.5 10c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span data-i18n="marquee.m5">Trusted across Europe</span></span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="marquee.m7">Multilingual team</span></span>
+  </div>
+</div>
+
+<!-- ============ FEATURES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="features.eyebrow">Why Milas Offshore</div>
+      <h2 data-i18n="features.title">Sourcing marine equipment, made simple</h2>
+      <p data-i18n="features.sub">We handle inspection, documentation and logistics, so you get the right part on time.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card feature-card-lg reveal spotlight">
+        <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+        <h3 data-i18n="features.f1_t">Fast quotation</h3>
+        <p data-i18n="features.f1_d">Send us your enquiry and receive a detailed quote, usually within 24 hours.</p>
+      </div>
+      <div class="feature-card feature-card-wide reveal">
+        <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z" stroke-linejoin="round"/></svg></div>
+        <h3 data-i18n="features.f3_t">Inspected equipment</h3>
+        <p data-i18n="features.f3_d">Every part is checked and documented before it leaves our warehouse.</p>
+      </div>
+      <div class="feature-card feature-card-wide reveal">
+        <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2" stroke-linecap="round"/></svg></div>
+        <h3 data-i18n="features.f4_t">Wide inventory</h3>
+        <p data-i18n="features.f4_d">New arrivals added constantly: engines, deck gear, navigation, safety and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PRODUCTS ============ -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;max-width:none;">
+      <div>
+        <div class="eyebrow" data-i18n="products.eyebrow">Inventory</div>
+        <h2 style="margin-bottom:6px;" data-i18n="products.title">Featured equipment</h2>
+        <p data-i18n="products.sub" style="max-width:520px;">A selection of what's currently in stock. Full catalogue available on request.</p>
+      </div>
+      <a href="products.html" class="btn btn-outline" data-i18n="products.view_all">View full catalogue</a>
+    </div>
+    <div class="product-grid" data-featured-grid></div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="steps.eyebrow">How it works</div>
+      <h2 data-i18n="steps.title">From enquiry to delivery</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">01</div><h3 data-i18n="steps.s1_t">Send your enquiry</h3><p data-i18n="steps.s1_d">Tell us what you need: part number, make, or just a description.</p></div>
+      <div class="step reveal"><div class="step-num">02</div><h3 data-i18n="steps.s2_t">Get a fast quote</h3><p data-i18n="steps.s2_d">Our team sources and prices the item, usually within a day.</p></div>
+      <div class="step reveal"><div class="step-num">03</div><h3 data-i18n="steps.s3_t">Confirm &amp; inspect</h3><p data-i18n="steps.s3_d">We confirm the order and inspect / prepare the part for shipping.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT TEASER ============ -->
+<section class="section" style="background:var(--white);">
+  <div class="container split">
+    <div class="reveal">
+      <div class="eyebrow" data-i18n="about_teaser.eyebrow">About us</div>
+      <h2 data-i18n="about_teaser.title">A Turkish maritime heritage, based in Europe</h2>
+      <p data-i18n="about_teaser.p1">Milas Offshore is the European representative office of our parent company, headquartered on Turkey's Aegean coast. We bring a maritime trading heritage spanning decades to shipowners, yards and operators across Europe and beyond.</p>
+      <ul class="checklist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="about_teaser.c1">Sourced and inspected marine equipment</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="about_teaser.c2">Fast, transparent quotations</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="about_teaser.c3">Reliable worldwide logistics</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="about_teaser.c4">A team that speaks your language: EN, NL, FR, DE</span></li>
+      </ul>
+      <a href="about.html" class="btn btn-dark" data-i18n="about_teaser.cta">More about us</a>
+    </div>
+    <div class="split-art reveal">
+      <svg viewBox="0 0 200 200" fill="none">
+        <circle cx="100" cy="100" r="90" stroke="rgba(219,165,61,.35)" stroke-width="1.5" stroke-dasharray="4 6"/>
+        <path d="M40 120h120M55 100h90M70 80h60" stroke="rgba(255,255,255,.5)" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="100" cy="60" r="14" fill="#dba53d" opacity=".85"/>
+        <path d="M60 140c10-10 20-10 40 0s30 10 40 0" stroke="#f0d9a0" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-banner reveal spotlight">
+      <h2 data-i18n="cta_banner.title">Have equipment to source, or to sell?</h2>
+      <p data-i18n="cta_banner.sub">Tell us what you're looking for, or what you have available. We'll get back to you fast.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary" data-i18n="cta_banner.cta1">Request a quote</a>
+        <a href="contact.html" class="btn btn-ghost" data-i18n="cta_banner.cta2">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:14px;">
+          <span class="brand-mark"><img src="images/logo-mark.png" alt="Milas Offshore"></span>
+          <span class="brand-text" data-i18n="brand.name">Milas Offshore</span>
+        </div>      </div>
+      <div>
+        <h4 data-i18n="footer.links_t">Quick links</h4>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="footer.l_home">Home</a>
+          <a href="products.html" data-i18n="footer.l_products">Products</a>
+          <a href="about.html" data-i18n="footer.l_about">About</a>
+          <a href="contact.html" data-i18n="footer.l_contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.company_t">Company</h4>
+        <div class="footer-links">
+          <a href="#" data-i18n="footer.c_terms">Terms &amp; Conditions</a>
+          <a href="#" data-i18n="footer.c_privacy">Privacy Policy</a>
+          <a href="contact.html" data-i18n="footer.c_rfq">Request for Quote</a>
+          <a href="admin.html" data-i18n="footer.l_admin">Admin login</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact_t">Contact</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6.5-5.7-6.5-11A6.5 6.5 0 1118.5 10c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span data-i18n="footer.addr">Rotterdam area, The Netherlands</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 2.9a2 2 0 01-.4 2.1L8 10a16 16 0 006 6l1.3-1.4a2 2 0 012.1-.4c.9.4 1.9.6 2.9.7a2 2 0 011.7 2z" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="footer.phone">+31 686183850</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="footer.email">info@milasoffshore.nl</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> <span data-i18n="brand.name">Milas Offshore</span>. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <div class="footer-lang">
+        <button data-lang-btn="en" type="button">EN</button>
+        <button data-lang-btn="nl" type="button">NL</button>
+        <button data-lang-btn="fr" type="button">FR</button>
+        <button data-lang-btn="de" type="button">DE</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="data/products.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/store.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
