@@ -83,10 +83,10 @@ const I18N = (function () {
         form_t: "Send an enquiry", name: "Full name", company: "Company", email: "Email address", phone: "Phone (optional)",
         subject: "What are you looking for?", subject_ph: "e.g. Marine diesel generator, 200kW",
         message: "Message / specifications", message_ph: "Part number, make/model, quantity, condition preference, delivery port...",
-        submit: "Send enquiry", note: "This is a demo form. Connect it to your email or CRM before going live, see the setup notes for how.",
+        submit: "Send enquiry", note: "Your enquiry is sent straight to our team — we usually reply within 24 hours.",
         info_t: "Get in touch", addr_l: "Location", addr_v: "Rotterdam area, The Netherlands",
         phone_l: "Phone", phone_v: "+31 686183850", email_l: "Email", email_v: "info@milasoffshore.nl",
-        hours_l: "Response time", hours_v: "Within 24 hours, Monday to Friday", whatsapp_cta: "Chat on WhatsApp", success: "Thanks, your enquiry has been captured (demo mode). We'll be in touch shortly."
+        hours_l: "Response time", hours_v: "Within 24 hours, Monday to Friday", whatsapp_cta: "Chat on WhatsApp", success: "Thanks, your enquiry has been sent. We'll be in touch shortly.", error: "Something went wrong sending your enquiry. Please try again or email us directly."
       },
       admin: {
         login_title: "Admin sign in", login_sub: "Manage your product catalogue.", pass_label: "Access code", pass_ph: "Enter access code",
@@ -174,10 +174,10 @@ const I18N = (function () {
         form_t: "Stuur een aanvraag", name: "Volledige naam", company: "Bedrijf", email: "E-mailadres", phone: "Telefoon (optioneel)",
         subject: "Wat zoekt u?", subject_ph: "bijv. Marine dieselgenerator, 200kW",
         message: "Bericht / specificaties", message_ph: "Onderdeelnummer, merk/model, aantal, gewenste staat, leveringshaven...",
-        submit: "Aanvraag versturen", note: "Dit is een demoformulier. Koppel het aan uw e-mail of CRM voordat u live gaat, zie de setup-notities voor uitleg.",
+        submit: "Aanvraag versturen", note: "Uw aanvraag wordt rechtstreeks naar ons team gestuurd — meestal reageren wij binnen 24 uur.",
         info_t: "Neem contact op", addr_l: "Locatie", addr_v: "Regio Rotterdam, Nederland",
         phone_l: "Telefoon", phone_v: "+31 686183850", email_l: "E-mail", email_v: "info@milasoffshore.nl",
-        hours_l: "Reactietijd", hours_v: "Binnen 24 uur, maandag tot en met vrijdag", whatsapp_cta: "Chat via WhatsApp", success: "Bedankt, uw aanvraag is geregistreerd (demomodus). We nemen snel contact op."
+        hours_l: "Reactietijd", hours_v: "Binnen 24 uur, maandag tot en met vrijdag", whatsapp_cta: "Chat via WhatsApp", success: "Bedankt, uw aanvraag is verzonden. We nemen spoedig contact met u op.", error: "Er is iets misgegaan bij het verzenden. Probeer het opnieuw of mail ons rechtstreeks."
       },
       admin: {
         login_title: "Beheerder inloggen", login_sub: "Beheer uw productcatalogus.", pass_label: "Toegangscode", pass_ph: "Voer toegangscode in",
@@ -266,10 +266,10 @@ const I18N = (function () {
         form_t: "Envoyer une demande", name: "Nom complet", company: "Entreprise", email: "Adresse e-mail", phone: "Téléphone (facultatif)",
         subject: "Que recherchez-vous ?", subject_ph: "ex. Générateur diesel marin, 200kW",
         message: "Message / spécifications", message_ph: "Référence, marque/modèle, quantité, état souhaité, port de livraison...",
-        submit: "Envoyer la demande", note: "Ceci est un formulaire de démonstration. Connectez-le à votre e-mail ou CRM avant la mise en ligne, voir les notes de configuration pour savoir comment faire.",
+        submit: "Envoyer la demande", note: "Votre demande est envoyée directement à notre équipe — nous répondons généralement sous 24 heures.",
         info_t: "Contactez-nous", addr_l: "Localisation", addr_v: "Région de Rotterdam, Pays-Bas",
         phone_l: "Téléphone", phone_v: "+31 686183850", email_l: "E-mail", email_v: "info@milasoffshore.nl",
-        hours_l: "Délai de réponse", hours_v: "Sous 24 heures, du lundi au vendredi", whatsapp_cta: "Discuter sur WhatsApp", success: "Merci, votre demande a été enregistrée (mode démo). Nous vous recontacterons sous peu."
+        hours_l: "Délai de réponse", hours_v: "Sous 24 heures, du lundi au vendredi", whatsapp_cta: "Discuter sur WhatsApp", success: "Merci, votre demande a été envoyée. Nous vous recontacterons sous peu.", error: "Une erreur s'est produite lors de l'envoi. Veuillez réessayer ou nous écrire directement."
       },
       admin: {
         login_title: "Connexion admin", login_sub: "Gérez votre catalogue de produits.", pass_label: "Code d'accès", pass_ph: "Entrez le code d'accès",
@@ -358,10 +358,10 @@ const I18N = (function () {
         form_t: "Anfrage senden", name: "Vollständiger Name", company: "Unternehmen", email: "E-Mail-Adresse", phone: "Telefon (optional)",
         subject: "Wonach suchen Sie?", subject_ph: "z. B. Marine-Dieselgenerator, 200kW",
         message: "Nachricht / technische Daten", message_ph: "Teilenummer, Marke/Modell, Menge, gewünschter Zustand, Lieferhafen...",
-        submit: "Anfrage senden", note: "Dies ist ein Demo-Formular. Verbinden Sie es vor dem Live-Gang mit Ihrer E-Mail oder Ihrem CRM, siehe die Einrichtungshinweise dazu.",
+        submit: "Anfrage senden", note: "Ihre Anfrage wird direkt an unser Team gesendet — wir antworten in der Regel innerhalb von 24 Stunden.",
         info_t: "Kontaktieren Sie uns", addr_l: "Standort", addr_v: "Region Rotterdam, Niederlande",
         phone_l: "Telefon", phone_v: "+31 686183850", email_l: "E-Mail", email_v: "info@milasoffshore.nl",
-        hours_l: "Antwortzeit", hours_v: "Innerhalb von 24 Stunden, Montag bis Freitag", whatsapp_cta: "Per WhatsApp chatten", success: "Vielen Dank, Ihre Anfrage wurde erfasst (Demomodus). Wir melden uns in Kürze bei Ihnen."
+        hours_l: "Antwortzeit", hours_v: "Innerhalb von 24 Stunden, Montag bis Freitag", whatsapp_cta: "Per WhatsApp chatten", success: "Vielen Dank, Ihre Anfrage wurde gesendet. Wir melden uns in Kürze bei Ihnen.", error: "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt."
       },
       admin: {
         login_title: "Admin-Anmeldung", login_sub: "Verwalten Sie Ihren Produktkatalog.", pass_label: "Zugangscode", pass_ph: "Zugangscode eingeben",

@@ -58,6 +58,10 @@
     <div class="form-card reveal">
       <h3 data-i18n="contact_page.form_t">Send an enquiry</h3>
       <form id="rfq-form">
+        <input type="hidden" name="access_key" value="18f8eec6-7919-4cbe-8dcc-d6d16be8b32a">
+        <input type="hidden" name="subject" value="New RFQ — Milas Offshore website">
+        <input type="hidden" name="from_name" value="Milas Offshore website">
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div class="field">
             <label data-i18n="contact_page.name">Full name</label>
@@ -181,12 +185,30 @@
     if (item) document.getElementById("rfq-subject").value = decodeURIComponent(item);
 
     const form = document.getElementById("rfq-form");
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      // Demo mode: no backend connected yet. See admin notes / setup guide
-      // for how to wire this to email (e.g. Formspree) or a real backend.
-      showToast(I18N.t("contact_page.success"));
-      form.reset();
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalLabel = submitBtn.textContent;
+      submitBtn.disabled = true;
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Accept": "application/json" },
+          body: new FormData(form)
+        });
+        const data = await res.json();
+        if (data.success) {
+          showToast(I18N.t("contact_page.success"));
+          form.reset();
+        } else {
+          showToast(I18N.t("contact_page.error"));
+        }
+      } catch (err) {
+        showToast(I18N.t("contact_page.error"));
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalLabel;
+      }
     });
   });
 </script>
