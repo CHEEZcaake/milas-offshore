@@ -75,7 +75,7 @@ const I18N = (function () {
         s2_t: "What we do", s2_p1: "From engines and generators to deck machinery, navigation electronics, safety equipment and valves — much of it drawn straight from our parent company's stock in Turkey — we help clients find the right part fast, backed by clear documentation and honest condition reporting.",
         mv_t: "Mission & values", m_t: "Our mission", m_p: "To make sourcing marine and offshore equipment fast, transparent and reliable, by connecting our Turkish supply network directly with clients across Europe.",
         v_t: "Our values", v1: "Transparency in every quote and condition report", v2: "Speed, because downtime is expensive", v3: "Long-term relationships over one-off sales",
-        staff_t: "Our Team", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Sales Manager", staff_role_handan: "HR",
+        staff_t: "Our Team", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Sales Manager", staff_role_handan: "HR", staff_role_zehra: "Financial Advisor",
         team_t: "Multilingual, hands-on team", team_p: "Our team works across English, Dutch, French and German, with a direct line to our headquarters in Turkey, so communication is never the bottleneck when you need a part fast."
       },
       contact_page: {
@@ -166,7 +166,7 @@ const I18N = (function () {
         s2_t: "Wat wij doen", s2_p1: "Van motoren en generatoren tot dekmachines, navigatie-elektronica, veiligheidsuitrusting en kleppen — veel daarvan rechtstreeks uit de voorraad van ons moederbedrijf in Turkije — wij helpen klanten snel het juiste onderdeel te vinden, met duidelijke documentatie en eerlijke conditierapportage.",
         mv_t: "Missie & waarden", m_t: "Onze missie", m_p: "Het inkopen van maritieme en offshore uitrusting snel, transparant en betrouwbaar maken, door ons Turkse toeleveringsnetwerk rechtstreeks te verbinden met klanten in heel Europa.",
         v_t: "Onze waarden", v1: "Transparantie in elke offerte en conditierapport", v2: "Snelheid, want stilstand is kostbaar", v3: "Langetermijnrelaties boven eenmalige verkoop",
-        staff_t: "Ons team", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Sales Manager", staff_role_handan: "HR",
+        staff_t: "Ons team", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Sales Manager", staff_role_handan: "HR", staff_role_zehra: "Financieel Adviseur",
         team_t: "Meertalig, betrokken team", team_p: "Ons team werkt in het Engels, Nederlands, Frans en Duits, met een directe lijn naar ons hoofdkantoor in Turkije, zodat communicatie nooit de bottleneck is als u snel een onderdeel nodig heeft."
       },
       contact_page: {
@@ -258,7 +258,7 @@ const I18N = (function () {
         s2_t: "Ce que nous faisons", s2_p1: "Des moteurs et générateurs aux équipements de pont, à l'électronique de navigation, aux équipements de sécurité et aux vannes — une grande partie provenant directement du stock de notre maison mère en Turquie — nous aidons nos clients à trouver rapidement la bonne pièce, avec une documentation claire et un compte-rendu honnête de l'état.",
         mv_t: "Mission & valeurs", m_t: "Notre mission", m_p: "Rendre l'approvisionnement en équipements maritimes et offshore rapide, transparent et fiable, en connectant directement notre réseau d'approvisionnement turc avec des clients à travers l'Europe.",
         v_t: "Nos valeurs", v1: "Transparence dans chaque devis et rapport d'état", v2: "Rapidité, car les temps d'arrêt coûtent cher", v3: "Des relations durables plutôt que des ventes ponctuelles",
-        staff_t: "Notre équipe", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Responsable des ventes", staff_role_handan: "RH",
+        staff_t: "Notre équipe", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Responsable des ventes", staff_role_handan: "RH", staff_role_zehra: "Conseillère Financière",
         team_t: "Une équipe multilingue et impliquée", team_p: "Notre équipe travaille en anglais, néerlandais, français et allemand, avec une ligne directe vers notre siège en Turquie, afin que la communication ne soit jamais un frein lorsque vous avez besoin d'une pièce rapidement."
       },
       contact_page: {
@@ -350,7 +350,7 @@ const I18N = (function () {
         s2_t: "Was wir tun", s2_p1: "Von Motoren und Generatoren über Deckmaschinen, Navigationselektronik, Sicherheitsausrüstung bis hin zu Ventilen — vieles davon direkt aus dem Lagerbestand unserer Muttergesellschaft in der Türkei — helfen wir Kunden, schnell das richtige Teil zu finden, unterstützt durch klare Dokumentation und ehrliche Zustandsberichte.",
         mv_t: "Mission & Werte", m_t: "Unsere Mission", m_p: "Die Beschaffung von Marine- und Offshore-Ausrüstung schnell, transparent und zuverlässig zu gestalten, indem wir unser türkisches Beschaffungsnetzwerk direkt mit Kunden in ganz Europa verbinden.",
         v_t: "Unsere Werte", v1: "Transparenz bei jedem Angebot und Zustandsbericht", v2: "Geschwindigkeit, denn Stillstand ist teuer", v3: "Langfristige Beziehungen statt Einmalverkäufe",
-        staff_t: "Unser Team", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Sales Manager", staff_role_handan: "Personalwesen",
+        staff_t: "Unser Team", staff_role_talha: "CEO / Sales Executive", staff_role_burak: "Sales Manager", staff_role_handan: "Personalwesen", staff_role_zehra: "Finanzberaterin",
         team_t: "Mehrsprachiges, praxisnahes Team", team_p: "Unser Team arbeitet auf Englisch, Niederländisch, Französisch und Deutsch, mit einer direkten Verbindung zu unserem Hauptsitz in der Türkei, sodass Kommunikation nie zum Engpass wird, wenn Sie schnell ein Teil benötigen."
       },
       contact_page: {
