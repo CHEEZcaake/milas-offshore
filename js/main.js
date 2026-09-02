@@ -184,3 +184,77 @@ function showToast(message, iconSvg) {
   clearTimeout(toast._t);
   toast._t = setTimeout(() => toast.classList.remove("show"), 3200);
 }
+
+/* Fullscreen image lightbox, usable by other scripts.
+   Call openLightbox(src, alt) for a single image, or
+   openLightbox(images, alt, startIndex) for a navigable gallery. */
+let _lbImages = [];
+let _lbIndex = 0;
+let _lbOnChange = null;
+
+function _lbEnsure() {
+  let lb = document.querySelector(".lightbox");
+  if (lb) return lb;
+  lb = document.createElement("div");
+  lb.className = "lightbox";
+  lb.innerHTML = `
+    <button type="button" class="lightbox-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <img class="lightbox-img" src="" alt="">
+    <button type="button" class="lightbox-nav lightbox-next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="lightbox-counter"></div>`;
+  document.body.appendChild(lb);
+  lb.addEventListener("click", (e) => {
+    if (e.target === lb || e.target.closest(".lightbox-close")) closeLightbox();
+    else if (e.target.closest(".lightbox-prev")) lbStep(-1);
+    else if (e.target.closest(".lightbox-next")) lbStep(1);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (!lb.classList.contains("show")) return;
+    if (e.key === "Escape") closeLightbox();
+    else if (e.key === "ArrowLeft") lbStep(-1);
+    else if (e.key === "ArrowRight") lbStep(1);
+  });
+  return lb;
+}
+
+function _lbRender() {
+  const lb = _lbEnsure();
+  const src = _lbImages[_lbIndex];
+  lb.querySelector(".lightbox-img").src = src;
+  const multi = _lbImages.length > 1;
+  lb.querySelector(".lightbox-prev").style.display = multi ? "" : "none";
+  lb.querySelector(".lightbox-next").style.display = multi ? "" : "none";
+  lb.querySelector(".lightbox-counter").textContent = multi ? `${_lbIndex + 1} / ${_lbImages.length}` : "";
+  lb.querySelector(".lightbox-counter").style.display = multi ? "" : "none";
+}
+
+function lbStep(dir) {
+  if (!_lbImages.length) return;
+  _lbIndex = (_lbIndex + dir + _lbImages.length) % _lbImages.length;
+  _lbRender();
+  if (typeof _lbOnChange === "function") _lbOnChange(_lbIndex);
+}
+
+function openLightbox(srcOrList, alt, startIndex, onChange) {
+  _lbImages = Array.isArray(srcOrList) ? srcOrList : [srcOrList];
+  _lbIndex = startIndex || 0;
+  _lbOnChange = onChange || null;
+  const lb = _lbEnsure();
+  lb.querySelector(".lightbox-img").alt = alt || "";
+  _lbRender();
+  lb.classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+function closeLightbox() {
+  const lb = document.querySelector(".lightbox");
+  if (!lb) return;
+  lb.classList.remove("show");
+  document.body.style.overflow = "";
+}

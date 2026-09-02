@@ -142,7 +142,7 @@ function renderDetail() {
     const gallery = (product.images && product.images.length) ? product.images : (product.image ? [product.image] : []);
     const mediaPanel = gallery.length
       ? `<div class="detail-gallery">
-           <div class="detail-gallery-main"><img src="${escapeHtml(gallery[0])}" alt="${escapeHtml(product.name)}" data-gallery-main></div>
+           <div class="detail-gallery-main" data-gallery-zoom><img src="${escapeHtml(gallery[0])}" alt="${escapeHtml(product.name)}" data-gallery-main></div>
            ${gallery.length > 1 ? `<div class="detail-gallery-thumbs">${gallery.map((src, i) => `<button type="button" class="detail-gallery-thumb${i === 0 ? " is-active" : ""}" data-gallery-thumb="${escapeHtml(src)}"><img src="${escapeHtml(src)}" alt=""></button>`).join("")}</div>` : ""}
          </div>`
       : `<div class="hero-panel" style="background:linear-gradient(160deg,var(--navy-800),var(--navy-600));padding:50px;">
@@ -174,12 +174,18 @@ function renderDetail() {
       </div>`;
 
     const mainImg = wrap.querySelector("[data-gallery-main]");
-    wrap.querySelectorAll("[data-gallery-thumb]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        if (mainImg) mainImg.src = btn.getAttribute("data-gallery-thumb");
-        wrap.querySelectorAll("[data-gallery-thumb]").forEach((b) => b.classList.remove("is-active"));
-        btn.classList.add("is-active");
-      });
+    const zoomBox = wrap.querySelector("[data-gallery-zoom]");
+    let activeIndex = 0;
+    function setActive(i) {
+      activeIndex = i;
+      if (mainImg) mainImg.src = gallery[i];
+      wrap.querySelectorAll("[data-gallery-thumb]").forEach((b, bi) => b.classList.toggle("is-active", bi === i));
+    }
+    if (zoomBox && mainImg) {
+      zoomBox.addEventListener("click", () => openLightbox(gallery, product.name, activeIndex, setActive));
+    }
+    wrap.querySelectorAll("[data-gallery-thumb]").forEach((btn, i) => {
+      btn.addEventListener("click", () => setActive(i));
     });
   }
 
